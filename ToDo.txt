@@ -1,0 +1,106 @@
+1-> Benchmark Pointer Aliasing 
+relevant compiler flags : -fstrict-aliasing
+
+2-> Benchmark Loop-Invariant Code Motion (LICM)
+relevant compiler flags: -fno-unroll-loops, -fmove-loop-invariants
+seaf,
+
+3-> Benchmark various type casts, signed/unsiged int - float <-> signed/unsigned int, float
+const_cast, static_cast, reinterpret_cast, dynamic_cast.
+
+4-> Benchmark return types. primitive vs composite. Return Value Optimization!
+Composite object movable vs unmovable.
+
+5-> Benchmark recursive vs iterative.
+
+6-> Benchmark Compile time polymorphism vs runtime.
+
+7-> Implement a CRTP example.
+
+8-> Benchmark Member data alignment both on size and access runtime.
+
+9-> Benchmark data access in forwards vs backwards vs random.
+
+10-> Benchmark array vs linked list vs tree vs hash-map access.
+
+11-> Benchmark different Matrix multiplication implementations.
+
+12-> Benchmark member data and function ordering's effect.
+
+13-> Benchmark dynamic allocation cost. custom vector<> implementation with resize(capacity + 1) vs std::vector vs custom vector<> with resize(capacity * 4)...
+
+14-> Benchmark dynamic allocation cost with dirty heap vs clean heap.
+
+15-> Benchmark branchless binary search vs normal binary search vs std::lower_bound.
+
+16-> Benchmark probability vs branch prediction flags.
+
+17-> Benchmark Vectorization vs loop unrolling.
+
+18-> Benchmark division vs multiplication with reciprocal.
+
+19-> Benchmark constant folding. 
+- Block1 -- const folded block0 -- Block 2 vs Block1 Block0 Block2 vs const folded block0 - Block0
+
+20-> Research constant propagation.
+
+21-> Implement an example for Common Subexpression Elimination.
+
+22-> Benchmark tail call elimination.
+
+23-> Implement loop fission.
+
+24-> Implement loop fusion.
+
+25-> Implement and Benchmark loop inversion.
+
+26-> Benchmark loop interchange.
+
+27-> Benchmark induction variable.
+
+28-> Benchmark live range analysis.
+
+29-> Investigate and Benchmark Rematerialization.
+
+30-> Invesigate Algebraic reductions.
+
+31-> Investigate Static Single Assignment.
+
+32-> Benchmark devirtualization.
+
+33-> Benchmark inlining.
+
+34-> Investigate and Benchmark Link Time Optimization.
+
+35-> Investigate Floating point induction variables.
+
+36-> Investigate Profile Guided Optimization.
+
+37-> Investigate Whole Program Optimization.
+
+38-> Investigate -march.
+
+39-> Investigate and Benchmark Run-Time Type Information.
+
+40-> Investigate unsafe math optimization flags: ffp-model=fast, -funsafe-math-optimizations and -ffinite-math-only & -fno-trapping-math and -fno-math-errno
+
+41-> Investigate Dead Store Elimination.
+
+42-> Investigate Delayed Branch Instruction.
+
+43-> Investigate Guess Branch Probability.
+
+44-> Investigate If Conversion: -fif-conversion and -fif-conversion2.
+
+45-> Investigate and Benchmark the following flags:
+-fauto-inc-dec, -fshrink-wrap, -fbranch-count-reg, -fshrink-wrap-separate, -fcombine-stack-adjustments, -fsplit-wide-types, -fcompare-elim, -fssa-backprop, -fcprop-registers, -fssa-phiopt, -fdce, -ftree-bit-ccp, -fdefer-pop, -ftree-ccp, -fdelayed-branch, -ftree-ch, -fdse, -ftree-coalesce-vars, -fforward-propagate, -ftree-copy-prop, -fguess-branch-probability, -ftree-dce, -fif-conversion, -ftree-dominator-opts, -fif-conversion2, -ftree-dse, -finline-functions-called-once, -ftree-forwprop, -fipa-modref, -ftree-fre, -fipa-profile, -ftree-phiprop, -fipa-pure-const, -ftree-pta, -fipa-reference, -ftree-scev-cprop, -fipa-reference-addressable, -ftree-sink, -fmerge-constants162, -ftree-slsr, -fmove-loop-invariants, -ftree-sra, -fmove-loop-stores, -ftree-ter, -fomit-frame-pointer, -funit-at-a-time, -freorder-blocks
+
+46-> Investigate and Benchmark alignment on functions, labels and loops.
+
+47-> Investigate null pointer checks and -O2 flag -fdelete-null-pointer-checks 
+
+48-> Investigate Inlining aggresiveness. Find examples where -finline-functions, -finline-functions-called-once, and -findirect-inlining worsen performance.
+
+49-> Investigate -O2 optimization flags.
+
+50-> Investigate -O3 optimization flags.
