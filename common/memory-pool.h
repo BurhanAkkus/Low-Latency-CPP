@@ -14,9 +14,9 @@ namespace Common{
 
             MemoryPool() = delete; // default constructor can't be called.
             MemoryPool(const MemoryPool&) = delete; // copy constructor can't be called.
-            MemoryPool operator=(const MemoryPool&) = delete; // copy assignment can't be called.
+            MemoryPool& operator=(const MemoryPool&) = delete; // copy assignment can't be called.
             MemoryPool(const MemoryPool&&) = delete; // move constructor can't be called.
-            MemoryPool operator=(const MemoryPool&&) = delete;// move assignment can't be called.
+            MemoryPool& operator=(const MemoryPool&&) = delete;// move assignment can't be called.
 
             template<typename ...Args>
             T* allocate(Args... args) noexcept {
