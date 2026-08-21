@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <cstring>
 #define LIKELY(x) __builtin_expect(!!(x), 1) // [[likely]]
