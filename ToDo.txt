@@ -108,3 +108,5 @@ Composite object movable vs unmovable.
 51-> Benchmark Thread Affinity.
 
 52-> Investigate Atomic.
+
+53-> Improve Logger performance on strings.
