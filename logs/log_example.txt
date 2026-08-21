@@ -1,0 +1,7 @@
+This is my first(1.) log statement
+This is a C++ String 
+this is a C String
+this is my percentage sign:%
+I'm logging a percentage sign here%
+this is my int 3 and my unsigned int 7
+My float 3.14159 and my double 1.61853
