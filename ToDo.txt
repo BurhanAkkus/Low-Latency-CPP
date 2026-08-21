@@ -106,3 +106,5 @@ Composite object movable vs unmovable.
 50-> Investigate -O3 optimization flags.
 
 51-> Benchmark Thread Affinity.
+
+52-> Investigate Atomic.
