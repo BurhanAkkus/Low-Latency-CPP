@@ -110,3 +110,7 @@ Composite object movable vs unmovable.
 52-> Investigate Atomic.
 
 53-> Improve Logger performance on strings.
+
+54-> Investigate FD read flags - socket flags -.
+
+55-> Investigate Nagle's Algorithm.
